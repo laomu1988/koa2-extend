@@ -1,6 +1,6 @@
 {
   "name": "koa2-extend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "koa@next的一些扩展函数",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,11 @@
     "push": "nrm use npm && npm version patch && npm publish"
   },
   "repository": "laomu1988/koa2-extend",
-  "keywords": ["koa","koa@next","koa-extend"],
+  "keywords": [
+    "koa",
+    "koa@next",
+    "koa-extend"
+  ],
   "bugs": {
     "url": "https://github.com/laomu1988/koa2-extend/issues"
   },
