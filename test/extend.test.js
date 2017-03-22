@@ -2,6 +2,8 @@
 /* eslint no-undef: "error" */
 
 'use strict'
+var assert = require('assert');
+
 var expect = require('chai').expect
 var agent = require('supertest').agent
 var http = require('http')
@@ -13,9 +15,10 @@ var app = new koa();
 var fullUrl = '';
 var json = '';
 app.use(function(ctx) {
+    assert.equal(ctx.isDir(__dirname + '/'),true);
     fullUrl = ctx.fullUrl;
     console.log('fullUrl:',ctx.fullUrl);
-    if(fullUrl.indexOf('json') >= 0){
+    if(fullUrl.indexOf('json') >= 0) {
         ctx.response.body = '{"encode":true}';
         json = ctx.response.json;
     } else {

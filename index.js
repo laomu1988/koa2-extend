@@ -10,7 +10,7 @@ var Url = require('url');
 
 context.sendFile = require('./lib/sendFile');
 context.isBinary = require('./lib/isBinary');
-
+context.isDir = require('./lib/isDir');
 
 Object.defineProperties(context, {
     fullUrl: {

@@ -36,6 +36,7 @@ app.use(function(ctx) {
 * ctx.fullUrl            同request.fullUrl
 * ctx.isBinary(filepath) 根据文件路劲判断是否是二进制文件
 * ctx.sendFile(filepath) 发送文件
+* ctx.isDir(path)        判断本地路径是否是文件夹
 * request.fullUrl        包含protocol和host的完全链接
 * response.$             使用cheerio包裹后的html对象, 使用时转码, 转换失败返回''
 * response.json          使用JSON.parse转换body后的对象,   使用时转换, 转换失败返回''
